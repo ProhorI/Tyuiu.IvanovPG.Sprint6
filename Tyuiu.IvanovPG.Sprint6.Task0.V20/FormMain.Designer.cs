@@ -117,6 +117,7 @@
             groupBoxTask_IPG.TabIndex = 9;
             groupBoxTask_IPG.TabStop = false;
             groupBoxTask_IPG.Text = "Условие";
+            groupBoxTask_IPG.Enter += groupBoxTask_IPG_Enter;
             // 
             // textBoxTask
             // 
