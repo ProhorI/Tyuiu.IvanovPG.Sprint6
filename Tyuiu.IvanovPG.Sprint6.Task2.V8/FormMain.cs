@@ -64,5 +64,10 @@ namespace Tyuiu.IvanovPG.Sprint6.Task2.V8
         {
             MessageBox.Show("Таск 1 выполнил студент группы ИСТНб-24-1 Иванов Прохор Геннадьевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void chartFunction_IPG_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

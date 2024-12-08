@@ -37,6 +37,8 @@
             groupBoxOutput_IPG = new GroupBox();
             chartFunction_IPG = new System.Windows.Forms.DataVisualization.Charting.Chart();
             dataGridViewFunction_IPG = new DataGridView();
+            X = new DataGridViewTextBoxColumn();
+            Y = new DataGridViewTextBoxColumn();
             textBoxResult_IPG = new TextBox();
             groupBoxInput_IPG = new GroupBox();
             textBoxEnd_IPG = new TextBox();
@@ -45,8 +47,6 @@
             textBox3 = new TextBox();
             buttonReference_IPG = new Button();
             buttonDone_IPG = new Button();
-            X = new DataGridViewTextBoxColumn();
-            Y = new DataGridViewTextBoxColumn();
             groupBoxCondition_IPG.SuspendLayout();
             groupBoxOutput_IPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chartFunction_IPG).BeginInit();
@@ -114,6 +114,7 @@
             chartFunction_IPG.Size = new Size(862, 618);
             chartFunction_IPG.TabIndex = 2;
             chartFunction_IPG.Text = "chart1";
+            chartFunction_IPG.Click += chartFunction_IPG_Click;
             // 
             // dataGridViewFunction_IPG
             // 
@@ -125,6 +126,20 @@
             dataGridViewFunction_IPG.RowHeadersWidth = 82;
             dataGridViewFunction_IPG.Size = new Size(171, 618);
             dataGridViewFunction_IPG.TabIndex = 1;
+            // 
+            // X
+            // 
+            X.HeaderText = "X";
+            X.MinimumWidth = 10;
+            X.Name = "X";
+            X.Width = 200;
+            // 
+            // Y
+            // 
+            Y.HeaderText = "F(X)";
+            Y.MinimumWidth = 10;
+            Y.Name = "Y";
+            Y.Width = 200;
             // 
             // textBoxResult_IPG
             // 
@@ -207,18 +222,6 @@
             buttonDone_IPG.MouseDown += buttonDone_IPG_MouseDown;
             buttonDone_IPG.MouseEnter += buttonDone_IPG_MouseEnter;
             buttonDone_IPG.MouseLeave += buttonDone_IPG_MouseLeave;
-            // 
-            // X
-            // 
-            X.HeaderText = "X";
-            X.MinimumWidth = 10;
-            X.Name = "X";
-            // 
-            // Y
-            // 
-            Y.HeaderText = "F(X)";
-            Y.MinimumWidth = 10;
-            Y.Name = "Y";
             // 
             // FormMain
             // 
