@@ -15,6 +15,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V7
 
         private void buttonDone_IPG_Click(object sender, EventArgs e)
         {
+            string str = "**";
             textBoxOutput_IPG.Text = dataService.CollectTextFromFile(openFilePath);
         }
         private void buttonQuestion_IPG_Click(object sender, EventArgs e)

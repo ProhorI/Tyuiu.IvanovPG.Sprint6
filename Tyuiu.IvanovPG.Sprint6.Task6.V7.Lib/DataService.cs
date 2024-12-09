@@ -23,10 +23,5 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V7.Lib
             result = result.Trim();
             return result;
         }
-
-        public string CollectTextFromFile(string openFilePath)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
