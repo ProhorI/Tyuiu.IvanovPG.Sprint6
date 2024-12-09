@@ -13,7 +13,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V7
         string openFilePath;
         DataService dataService = new DataService();
 
-        private void buttonFile_IPG_Click(object sender, EventArgs e)
+        private void buttonDone_IPG_Click(object sender, EventArgs e)
         {
             textBoxOutput_IPG.Text = dataService.CollectTextFromFile(openFilePath);
         }
@@ -22,15 +22,17 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V7
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
-        private void buttonFile_IPG_Click(object sender, EventArgs e)
+        private void buttonOpenfile_IPG_Click(object sender, EventArgs e)
         {
-            object value = buttonFile_IPG.ShowDialog();
-            openFilePath = buttonFile_IPG.FileName;
+
+
+            openFileDialogTask_IPG.ShowDialog();
+            openFilePath = openFileDialogTask_IPG.FileName;
             try
             {
                 textBoxInput_IPG.Text = File.ReadAllText(openFilePath);
-                groupBoxInput_IPG.Text = groupBoxInput_IPG.Text + " " + buttonFile_IPG.FileName;
-                buttonCursor_IPG.Enabled = true;
+                textBoxInput_IPG.Text = groupBoxInput_IPG.Text + " " + openFileDialogTask_IPG.FileName;
+                buttonDone_IPG.Enabled = true;
             }
             catch
             {

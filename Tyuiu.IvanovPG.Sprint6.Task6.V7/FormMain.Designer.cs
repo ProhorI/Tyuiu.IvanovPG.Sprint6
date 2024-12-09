@@ -36,8 +36,8 @@
             textBoxInput_IPG = new TextBox();
             groupBoxOutput_IPG = new GroupBox();
             textBoxOutput_IPG = new TextBox();
-            buttonFile_IPG = new Button();
-            buttonCursor_IPG = new Button();
+            buttonOpenfile_IPG = new Button();
+            buttonDone_IPG = new Button();
             buttonQuestion_IPG = new Button();
             openFileDialogTask_IPG = new OpenFileDialog();
             toolTipTask_IPG = new ToolTip(components);
@@ -105,25 +105,27 @@
             textBoxOutput_IPG.Size = new Size(758, 559);
             textBoxOutput_IPG.TabIndex = 0;
             // 
-            // buttonFile_IPG
+            // buttonOpenfile_IPG
             // 
-            buttonFile_IPG.Location = new Point(31, 33);
-            buttonFile_IPG.Name = "buttonFile_IPG";
-            buttonFile_IPG.Size = new Size(229, 91);
-            buttonFile_IPG.TabIndex = 2;
-            buttonFile_IPG.Text = "файл";
-            toolTipTask_IPG.SetToolTip(buttonFile_IPG, "Открыть файл, выберите нужный файл для обработки\r\n\r\n");
-            buttonFile_IPG.UseVisualStyleBackColor = true;
+            buttonOpenfile_IPG.Location = new Point(51, 29);
+            buttonOpenfile_IPG.Name = "buttonOpenfile_IPG";
+            buttonOpenfile_IPG.Size = new Size(229, 91);
+            buttonOpenfile_IPG.TabIndex = 2;
+            buttonOpenfile_IPG.Text = "файл";
+            toolTipTask_IPG.SetToolTip(buttonOpenfile_IPG, "Открыть файл, выберите нужный файл для обработки\r\n\r\n");
+            buttonOpenfile_IPG.UseVisualStyleBackColor = true;
+            buttonOpenfile_IPG.Click += buttonOpenfile_IPG_Click;
             // 
-            // buttonCursor_IPG
+            // buttonDone_IPG
             // 
-            buttonCursor_IPG.Location = new Point(349, 33);
-            buttonCursor_IPG.Name = "buttonCursor_IPG";
-            buttonCursor_IPG.Size = new Size(252, 87);
-            buttonCursor_IPG.TabIndex = 2;
-            buttonCursor_IPG.Text = "курсор";
-            toolTipTask_IPG.SetToolTip(buttonCursor_IPG, "газ");
-            buttonCursor_IPG.UseVisualStyleBackColor = true;
+            buttonDone_IPG.Location = new Point(349, 33);
+            buttonDone_IPG.Name = "buttonDone_IPG";
+            buttonDone_IPG.Size = new Size(252, 87);
+            buttonDone_IPG.TabIndex = 2;
+            buttonDone_IPG.Text = "курсор";
+            toolTipTask_IPG.SetToolTip(buttonDone_IPG, "газ");
+            buttonDone_IPG.UseVisualStyleBackColor = true;
+            buttonDone_IPG.Click += buttonDone_IPG_Click;
             // 
             // buttonQuestion_IPG
             // 
@@ -151,8 +153,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1504, 959);
             Controls.Add(buttonQuestion_IPG);
-            Controls.Add(buttonCursor_IPG);
-            Controls.Add(buttonFile_IPG);
+            Controls.Add(buttonDone_IPG);
+            Controls.Add(buttonOpenfile_IPG);
             Controls.Add(groupBoxOutput_IPG);
             Controls.Add(groupBoxInput_IPG);
             Controls.Add(groupBoxCondition_IPG);
@@ -173,8 +175,8 @@
         private TextBox textBoxCondition_IPG;
         private GroupBox groupBoxInput_IPG;
         private GroupBox groupBoxOutput_IPG;
-        private Button buttonFile_IPG;
-        private Button buttonCursor_IPG;
+        private Button buttonOpenfile_IPG;
+        private Button buttonDone_IPG;
         private Button buttonQuestion_IPG;
         private TextBox textBoxInput_IPG;
         private TextBox textBoxOutput_IPG;
