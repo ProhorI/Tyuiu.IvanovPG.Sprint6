@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBoxCondition_IPG = new GroupBox();
             textBox1 = new TextBox();
             groupBoxOutput_IPG = new GroupBox();
@@ -172,18 +172,18 @@
             // 
             // chartFunction_IPG
             // 
-            chartArea3.Name = "ChartArea1";
-            chartFunction_IPG.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            chartFunction_IPG.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            chartFunction_IPG.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartFunction_IPG.Legends.Add(legend1);
             chartFunction_IPG.Location = new Point(986, 290);
             chartFunction_IPG.Name = "chartFunction_IPG";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            chartFunction_IPG.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartFunction_IPG.Series.Add(series1);
             chartFunction_IPG.Size = new Size(1007, 434);
             chartFunction_IPG.TabIndex = 6;
             chartFunction_IPG.Text = "chart1";
@@ -201,7 +201,8 @@
             Controls.Add(groupBoxOutput_IPG);
             Controls.Add(groupBoxCondition_IPG);
             Name = "FormMain";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Спринт 6 | Таск 4| Вариант 21| Иванов П. Г.";
             groupBoxCondition_IPG.ResumeLayout(false);
             groupBoxCondition_IPG.PerformLayout();
             groupBoxOutput_IPG.ResumeLayout(false);
