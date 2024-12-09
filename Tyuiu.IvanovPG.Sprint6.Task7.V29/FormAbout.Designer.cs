@@ -1,6 +1,6 @@
-﻿namespace Tyuiu.IvanovPG.Sprint6.Task6.V7
+﻿namespace Tyuiu.IvanovPG.Sprint6.Task7.V29
 {
-    partial class FormAbout
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,57 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBoxName_IPG = new PictureBox();
+            pictureBox1 = new PictureBox();
             labelInfo_IPG = new Label();
             buttonOk_IPG = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxName_IPG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBoxName_IPG
+            // pictureBox1
             // 
-            pictureBoxName_IPG.Location = new Point(12, 40);
-            pictureBoxName_IPG.Name = "pictureBoxName_IPG";
-            pictureBoxName_IPG.Size = new Size(241, 354);
-            pictureBoxName_IPG.TabIndex = 0;
-            pictureBoxName_IPG.TabStop = false;
+            pictureBox1.Location = new Point(44, 59);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(229, 362);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // labelInfo_IPG
             // 
             labelInfo_IPG.AutoSize = true;
-            labelInfo_IPG.Location = new Point(357, 109);
+            labelInfo_IPG.Location = new Point(302, 72);
             labelInfo_IPG.Name = "labelInfo_IPG";
-            labelInfo_IPG.Size = new Size(99, 32);
+            labelInfo_IPG.Size = new Size(295, 32);
             labelInfo_IPG.TabIndex = 1;
-            labelInfo_IPG.Text = "привет ";
+            labelInfo_IPG.Text = "Разработчик: Иванов П.Г.";
             // 
             // buttonOk_IPG
             // 
-            buttonOk_IPG.Location = new Point(575, 281);
+            buttonOk_IPG.Location = new Point(616, 375);
             buttonOk_IPG.Name = "buttonOk_IPG";
-            buttonOk_IPG.Size = new Size(150, 157);
+            buttonOk_IPG.Size = new Size(150, 46);
             buttonOk_IPG.TabIndex = 2;
-            buttonOk_IPG.Text = "ок";
+            buttonOk_IPG.Text = "ОК";
             buttonOk_IPG.UseVisualStyleBackColor = true;
             buttonOk_IPG.Click += buttonOk_IPG_Click;
             // 
-            // FormAbout
+            // Form2
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonOk_IPG);
             Controls.Add(labelInfo_IPG);
-            Controls.Add(pictureBoxName_IPG);
-            Name = "FormAbout";
-            Text = "FormAbout";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxName_IPG).EndInit();
+            Controls.Add(pictureBox1);
+            Name = "Form2";
+            Text = "О программе ";
+            Load += Form2_Load;
+            Click += buttonOk_IPG_Click;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBoxName_IPG;
+        private PictureBox pictureBox1;
         private Label labelInfo_IPG;
         private Button buttonOk_IPG;
     }

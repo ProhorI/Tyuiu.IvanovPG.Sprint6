@@ -8,18 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tyuiu.IvanovPG.Sprint6.Task6.V7
+namespace Tyuiu.IvanovPG.Sprint6.Task7.V29
 {
-    public partial class FormAbout : Form
+    public partial class Form2 : Form
     {
-        public FormAbout()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void buttonOk_IPG_Click(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonOk_IPG_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
