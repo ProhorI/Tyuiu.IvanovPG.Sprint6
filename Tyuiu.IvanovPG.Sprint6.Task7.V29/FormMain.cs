@@ -140,7 +140,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task7.V29
 
         private void buttonSaveFile_IPG_MouseEnter(object sender, EventArgs e)
         {
-            
+
             toolTipButton_IPG.ToolTipTitle = "Сохранить в файл";
         }
 
@@ -162,6 +162,11 @@ namespace Tyuiu.IvanovPG.Sprint6.Task7.V29
                 dataGridViewInput_IPG.Columns[i].Width = 50;
                 dataGridViewOutput_IPG.Columns[i].Width = 50;
             }
+        }
+
+        private void groupBoxTask_IPG_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

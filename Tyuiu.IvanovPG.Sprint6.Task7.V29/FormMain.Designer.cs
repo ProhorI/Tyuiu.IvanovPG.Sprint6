@@ -167,6 +167,7 @@
             groupBoxTask_IPG.Size = new Size(1722, 161);
             groupBoxTask_IPG.TabIndex = 6;
             groupBoxTask_IPG.TabStop = false;
+            groupBoxTask_IPG.Enter += groupBoxTask_IPG_Enter;
             // 
             // openFileDialogTask_IPG
             // 
