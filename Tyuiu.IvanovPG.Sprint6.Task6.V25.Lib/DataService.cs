@@ -18,7 +18,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V25.Lib
                     {
                         if (word.Contains('E'))
                         {
-                            res = res + "" + word;
+                            res = res + " " + word;
                         }
                     }
 
