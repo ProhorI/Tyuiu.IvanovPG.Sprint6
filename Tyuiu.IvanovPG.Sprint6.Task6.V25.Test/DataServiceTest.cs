@@ -11,7 +11,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V25.Test
             string path = @"C:\Users\ivano\source\repos\Tyuiu.IvanovPG.Sprint6\InPutDataFileTask6V25.txt";
             DataService ds = new DataService();
             string res = ds.CollectTextFromFile(path);
-            string wait = " ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE";
+            string wait = "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE";
             Assert.AreEqual(wait, res);
         }
     }
