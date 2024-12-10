@@ -16,7 +16,7 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V25
             openFileDialogTask_IPG.ShowDialog();
             openFilePath = openFileDialogTask_IPG.FileName;
             textBoxInput_IPG.Text = File.ReadAllText(openFilePath);
-            groupBoxInput_IPG.Text = groupBoxInput_IPG.Text + "" + openFileDialogTask_IPG.FileName;
+            groupBoxInput_IPG.Text = groupBoxInput_IPG.Text + " " + openFileDialogTask_IPG.FileName;
             buttonOpenFile_IPG.Enabled = false;
             buttonDone_IPG.Enabled = true;
         }

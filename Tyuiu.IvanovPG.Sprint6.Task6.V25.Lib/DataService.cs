@@ -1,5 +1,6 @@
 ﻿
 using System.IO;
+using System.Text.RegularExpressions;
 using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.IvanovPG.Sprint6.Task6.V25.Lib
 {
@@ -7,24 +8,42 @@ namespace Tyuiu.IvanovPG.Sprint6.Task6.V25.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string res = "";
+            string resStr = "";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] words = line.Split(' ');
-                    foreach (string word in words)
+                    if (line == "")
                     {
-                        if (word.Contains('E'))
+                        continue;
+                    }
+                    else
+                    {
+                        List<string> result = new List<string>();
+                        MatchCollection words = Regex.Matches(line, @"[А-Яа-яA-Za-z]+");
+                        foreach (var word in words)
                         {
-                            res = res + " " + word;
+                            result.Add(word.ToString());
+                        }
+
+                        foreach (var word in result)
+                        {
+                            if (word.Contains("E") || word.Contains("e"))
+                            {
+                                resStr += word + " ";
+                            }
                         }
                     }
-
                 }
             }
-            return res;
+            resStr = resStr.Trim();
+            return resStr;
         }
+
+        //public string CollectTextFromFile(string path)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
